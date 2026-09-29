@@ -31,16 +31,14 @@
     /* =========================
        FONT SIZES
     ========================= */
-
-    --h1-size: 64px;
-    --h2-size: 48px;
-    --h3-size: 34px;
-    --h4-size: 26px;
-    --h5-size: 20px;
-    --h6-size: 18px;
-
-    --p-size: 16px;
-    --small-text: 14px;
+    --h1-size: 4em;
+    --h2-size: 3em;
+    --h3-size: 2.15em;
+    --h4-size: 1.65em;
+    --h5-size: 1.3em;
+    --h6-size: 1.15em;
+    --p-size: 1em;
+    --small-text: 0.9em;
 
 }
 
@@ -123,7 +121,8 @@ header {
         rgba(11, 31, 58, 0.78) 55%,
         rgba(11, 31, 58, 0.35) 100%
     ),
-    url("images/hero.2.jpeg") center/cover no-repeat;
+    url("images/banner.mr.gule.png") center/cover no-repeat;
+    
 
      z-index: 10;
 }
@@ -147,7 +146,7 @@ header {
     align-items: center;
 }
 
-.logo img {
+.logo  {
     width: 150px;
     height: auto;
     display: block;
@@ -171,7 +170,7 @@ header {
     color: var(--white);
 
     font-family: var(--body-font);
-    font-size: 14px;
+     font-size: 0.9em;
     font-weight: 500;
 
     transition: 0.3s ease;
@@ -243,8 +242,11 @@ header {
     transition:
         color 0.3s ease,
         transform 0.3s ease;
+      
 }
-
+.sidebar li a{
+    font-size: 1.2em;
+}
 .sidebar a::before {
     content: "";
 
@@ -334,7 +336,7 @@ header {
     color: var(--white);
 
     font-family: var(--heading-font);
-    font-size: clamp(48px, 6vw, 78px);
+     font-size: clamp(3em, 6vw, 5em);
 
     font-weight: 600;
     line-height: 1.05;
@@ -357,9 +359,10 @@ header {
     max-width: 650px;
 
     color: rgba(255, 255, 255, 0.8);
+     font-size: 0.88em;
 
     font-family: var(--body-font);
-    font-size: 16px;
+     
 
     line-height: 1.8;
 
@@ -761,7 +764,7 @@ header {
 
     font-family: var(--heading-font);
 
-    font-size: clamp(42px, 5vw, 62px);
+      font-size: clamp(2.6em, 5vw, 3.9em);
 
     line-height: 1.05;
 
@@ -808,6 +811,7 @@ header {
 
 .symbol {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     gap: 12px;
@@ -831,7 +835,8 @@ header {
 
     font-family: var(--body-font);
 
-    font-size: 13px;
+    font-size: 0.85em;
+
     font-weight: 600;
 
     line-height: 1.4;
@@ -1076,7 +1081,7 @@ header {
     padding: 0;
 
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
+    grid-template-columns: 1.2fr;
 
     gap: 80px;
 
@@ -1126,7 +1131,7 @@ header {
 
     font-family: var(--heading-font);
 
-    font-size: clamp(42px, 5vw, 68px);
+    font-size: clamp(2.6em, 5vw, 4.25em);
 
     font-weight: 600;
 
@@ -1155,7 +1160,7 @@ header {
 
     font-family: var(--body-font);
 
-    font-size: 16px;
+   font-size: 0.99em;
 
     font-weight: 400;
 
@@ -1414,7 +1419,7 @@ header {
 
     font-family: var(--body-font);
 
-    font-size: 14px;
+    font-size: 0.88em;
 
     font-weight: 400;
 
@@ -1611,8 +1616,7 @@ header {
 
     display: grid;
 
-    grid-template-columns: 0.9fr 1.1fr;
-
+    grid-template-columns: minmax(380px, 0.85fr) minmax(0, 1.15fr);
     gap: 90px;
 
     align-items: center;
@@ -1628,7 +1632,9 @@ header {
 
 .story-image {
 
-    position: relative;
+   
+
+    top: 100px;
 
     width: 100%;
 
@@ -1643,9 +1649,11 @@ header {
 
     width: 100%;
 
-    height: 600px;
+    height: 720px;
 
     object-fit: cover;
+
+     object-position: center top;
 
     display: block;
 
@@ -1713,6 +1721,9 @@ header {
 
     max-width: 650px;
 
+
+    max-width: 760px;
+
 }
 
 
@@ -1743,7 +1754,7 @@ header {
 
     font-family: var(--heading-font);
 
-    font-size: clamp(40px, 5vw, 64px);
+    font-size: clamp(2.5em, 5vw, 4em);
 
     font-weight: 600;
 
@@ -1773,7 +1784,7 @@ header {
 
     font-family: var(--body-font);
 
-    font-size: 15px;
+    font-size: 0.98em;
 
     line-height: 1.9;
 
@@ -1816,7 +1827,7 @@ header {
 
     font-family: var(--heading-font);
 
-    font-size: 17px;
+    font-weight: 700;
 
 }
 
@@ -1837,10 +1848,157 @@ header {
 
 }
 
-
 /* =========================================
-   TABLET
+   ASSOCIATES
 ========================================= */
+
+
+
+
+
+.associates {
+
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 70px auto 0;
+
+    padding-top: 50px;
+
+    text-align: center;
+    margin-top: 55px;
+
+    padding-top: 35px;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+.associates-eyebrow {
+
+    margin: 0 0 8px;
+
+    color: var(--primary-red);
+
+    font-family: var(--body-font);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.associates-title {
+
+    margin: 0 0 25px;
+
+    color: var(--primary-blue);
+
+    font-family: var(--heading-font);
+
+    font-size: clamp(25px, 3vw, 34px);
+
+    font-weight: 600;
+
+}
+
+
+.associates-title span {
+
+    color: var(--primary-red);
+
+}
+
+
+.associate-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.associate-card {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+
+
+.associate-image {
+
+    width: 120px;
+
+    height:120px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+}
+
+
+.associate-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+.associate-info h4 {
+
+    margin: 0;
+
+    color: var(--primary-blue);
+
+    font-family: var(--heading-font);
+
+    font-size: 1.2em;
+
+    font-weight: 600;
+
+}
+
+
+.associate-info p {
+
+    margin: 5px 0 0;
+
+    color: #888;
+
+    font-family: var(--body-font);
+
+    font-size: 0.78em;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
 
 
 
@@ -1958,7 +2116,7 @@ header {
 .banner-box h3 {
     margin-bottom: 25px;
 
-    font-size: 30px;
+    font-size: 1.8em;
     font-weight: 600;
 
     color: white;
@@ -1970,7 +2128,7 @@ header {
 
     max-width: 330px;
 
-    font-size: 15px;
+    font-size: 0.98em;
     line-height: 1.8;
 
     color: rgba(255, 255, 255, 0.75);
@@ -2049,7 +2207,7 @@ header {
 
     color: var(--off-white);
 
-    font-size: clamp(40px, 5vw, 60px);
+   font-size: clamp(2.5em, 5vw, 3.75em);
 
     line-height: 1.05;
 }
@@ -2065,7 +2223,7 @@ header {
 
     color: rgba(255, 255, 255, 0.7);
 
-    font-size: 15px;
+    font-size: 0.88em;
     line-height: 1.9;
 }
 
@@ -2147,10 +2305,268 @@ header {
 
     color: rgba(255,255,255,0.65);
 
-    font-size: 14px;
+    font-size: 0.9xs8em;
 
     line-height: 1.7;
 }
+
+
+/* =========================================
+   OFFICE LOCATION SECTION
+========================================= */
+
+.office-location {
+    position: relative;
+    width: 100%;
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   BACKGROUND IMAGE
+========================================= */
+
+.office-background {
+    position: absolute;
+    inset: 0;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url("images/location.3.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+
+
+/* =========================================
+   CONTENT CONTAINER
+========================================= */
+
+.office-content {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+    padding: 80px 30px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* =========================================
+   OFFICE INFORMATION
+========================================= */
+
+.office-text {
+    width: 520px;
+
+    padding: 45px;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    border-left: 5px solid #b00020;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.section-subtitle {
+    margin: 0 0 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #b00020;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.office-title {
+    margin: 0 0 18px;
+
+    font-size: 48px;
+    line-height: 1.1;
+
+    color: #111;
+}
+
+.office-title span {
+    display: block;
+    color: #b00020;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.office-description {
+    margin: 0 0 35px;
+
+    font-size: 16px;
+    line-height: 1.7;
+
+    color: #555;
+}
+
+
+/* =========================================
+   OFFICE DETAILS
+========================================= */
+
+.office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================
+   INDIVIDUAL DETAIL
+========================================= */
+
+.office-detail {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   ICON
+========================================= */
+
+.office-icon {
+    width: 45px;
+    height: 45px;
+
+    min-width: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #b00020;
+    color: #fff;
+
+    border-radius: 50%;
+}
+
+.office-icon i {
+    font-size: 17px;
+}
+
+
+/* =========================================
+   DETAIL TEXT
+========================================= */
+
+.office-detail-text h4 {
+    margin: 0 0 5px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    color: #111;
+}
+
+.office-detail-text p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    color: #666;
+}
+
+
+/* =========================================
+   GET DIRECTIONS BUTTON
+========================================= */
+
+.location-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    padding: 14px 24px;
+
+    background: #b00020;
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.location-btn i {
+    transition: transform 0.3s ease;
+}
+
+.location-btn:hover {
+    background: #111;
+}
+
+.location-btn:hover i {
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   FADE ANIMATION
+========================================= */
+
+.fade {
+    opacity: 0;
+    transform: translateY(30px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
 
 
 /* contact*/
@@ -2195,7 +2611,7 @@ header {
     color: var(--primary-blue);
 
     font-family: var(--heading-font);
-    font-size: clamp(42px, 5vw, 62px);
+    font-size: clamp(2.6em, 5vw, 3.9em);
 
     line-height: 1.05;
 }
@@ -2211,7 +2627,7 @@ header {
     color: var(--text-light);
 
     font-family: var(--body-font);
-    font-size: 15px;
+    font-size: 0.88em;
 
     line-height: 1.8;
 }
@@ -2506,7 +2922,7 @@ header {
 }
 
 .footer-logo img {
-    width: 150px;
+    width: 200px;
     height: auto;
 
     display: block;
@@ -2734,6 +3150,60 @@ header {
 
 @media (max-width: 900px) {
 
+     .office-location {
+        min-height: 600px;
+    }
+
+    .office-content {
+        padding: 70px 25px;
+    }
+
+    .office-text {
+        width: 480px;
+        padding: 40px;
+    }
+
+    .office-title {
+        font-size: 42px;
+    }
+
+     .associate-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+      .attorney-story {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+
+        padding: 80px 6%;
+
+    }
+
+    .story-image {
+
+        max-width: 600px;
+
+    }
+
+    .story-image img {
+
+        height: 500px;
+
+    }
+
+    .story-content {
+
+        max-width: 700px;
+
+        margin: 0 auto;
+
+    }
+
+
 
 
     .attorney-story {
@@ -2937,14 +3407,110 @@ header {
         padding: 80px 5%;
     }
 
-    .hero-title {
-        font-size: clamp(44px, 9vw, 65px);
-    }
+    /* .hero-title {
+        font-size: clamp(40px, 9vw, 55px);
+    } */
 
 }  
 
 
 @media (max-width: 768px) {
+
+     .office-location {
+        min-height: auto;
+    }
+
+    .office-background {
+        background-position: center;
+    }
+
+    .office-content {
+            max-width: 600px;
+        padding: 60px 20px;
+    }
+
+    .office-text {
+        width: 100%;
+        padding: 30px 25px;
+
+        border-left: 4px solid #b00020;
+    }
+
+    .office-title {
+        font-size: 38px;
+    }
+
+    .office-description {
+        font-size: 15px;
+    }
+
+      .hero {
+        min-height: calc(100vh - 80px);
+
+        padding: 80px 6% 70px;
+
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .hero-subtitle {
+        gap: 10px;
+
+        margin-bottom: 18px;
+
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .hero-subtitle::before {
+        width: 30px;
+        height: 2px;
+    }
+
+    .hero-title {
+        max-width: 100%;
+
+        /* font-size: clamp(38px, 9vw, 58px); */
+
+        line-height: 1.08;
+
+        margin-bottom: 20px;
+    }
+
+    .hero-description {
+        margin: 0 auto;
+        max-width: 550px;
+
+       
+
+        line-height: 1.7;
+
+        margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 12px;
+    }
+
+    .hero-btn,
+    .hero-btn-outline {
+        padding: 13px 22px;
+
+        font-size: 13px;
+
+        border-radius: 16px;
+    }
 
 
 .learn-more {
@@ -3011,13 +3577,8 @@ header {
     text-align: center;
     }
 
-    .hero-title {
-        font-size: 46px;
-    }
-
-    .hero-description {
-        font-size: 15px;
-    }
+  
+   
 
     .hero-buttons {
         flex-direction: column;
@@ -3045,6 +3606,139 @@ header {
 }
 
 @media (max-width: 600px) {
+
+     .office-location {
+        padding: 75px 5%;
+    }
+
+    .office-title {
+        font-size: 2.7em;
+    }
+
+    .office-image {
+        height: 400px;
+    }
+
+    .office-image-label {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .office-detail {
+        gap: 14px;
+    }
+
+    .office-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .location-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+       .associates {
+        margin: 0 auto;
+      
+        margin-top: 50px;
+
+        padding-top: 35px;
+
+    }
+
+
+     .attorney-story {
+
+        padding: 70px 5%;
+
+    }
+
+    .story-image img {
+
+        height: 420px;
+
+    }
+
+    .story-badge {
+
+        right: -10px;
+
+        bottom: 20px;
+
+        width: 130px;
+
+        padding: 18px;
+
+    }
+
+    .associate-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+    }
+
+    .story-title {
+
+        font-size: clamp(32px, 10vw, 45px);
+
+    }
+
+
+    .hero {
+        min-height: calc(100vh - 70px);
+
+        padding: 60px 22px;
+    }
+
+    .hero-subtitle {
+        font-size: 9px;
+
+        letter-spacing: 1.2px;
+
+        gap: 8px;
+    }
+
+    .hero-subtitle::before {
+        width: 22px;
+    }
+
+    .hero-title {
+
+        line-height: 1.08;
+
+        margin-bottom: 18px;
+    }
+
+    .hero-description {
+       
+
+        line-height: 1.7;
+
+        margin-bottom: 25px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+     align-items: center;
+
+        width: 100%;
+    }
+
+    .hero-btn,
+    .hero-btn-outline {
+        width: 100%;
+
+        padding: 14px 20px;
+
+        font-size: 13px;
+
+        border-radius: 15px;
+    }
+
 
 
     .story-content {
@@ -3092,7 +3786,7 @@ header {
 
     .story-text {
 
-        font-size: 14px;
+        font-size: 0.98em;
 
         line-height: 1.8;
 
@@ -3126,7 +3820,7 @@ header {
 
 
     .service-subtitle {
-        font-size: 14px;
+       
 
         line-height: 1.7;
     }
@@ -3178,7 +3872,7 @@ header {
 
 
     .service-description {
-        font-size: 13px;
+      
 
         line-height: 1.7;
     }
@@ -3234,7 +3928,7 @@ header {
         flex-wrap: wrap;
     }
 
-    .contact { padding: 70px 5%; } .contact-head { margin-bottom: 50px; } .contact-title { font-size: 40px; } .contact-subtitle { font-size: 14px; } .contact-info { padding: 35px 25px; } .form-row { grid-template-columns: 1fr; gap: 0; } .contact-btn { width: 100%; }
+    .contact { padding: 70px 5%; } .contact-head { margin-bottom: 50px; } .contact-title { font-size: 40px; } .contact-subtitle {  } .contact-info { padding: 35px 25px; } .form-row { grid-template-columns: 1fr; gap: 0; } .contact-btn { width: 100%; }
 
     .why-us {
         padding: 70px 5%;
@@ -3272,7 +3966,6 @@ header {
     .about-img {
         height: 420px;
     }
-
     .about-image-container::before {
         top: 15px;
         left: -15px;
@@ -3340,12 +4033,11 @@ header {
         padding: 35px 25px;
     }
 
-    .banner-box h3 {
-        font-size: 21px;
-    }
+  
+
 
     .banner-box p {
-        font-size: 14px;
+   
         line-height: 1.7;
     }
 
@@ -3360,4 +4052,46 @@ header {
     .symbol {
         justify-content: center;
 }
+}
+
+@media (max-width: 480px) {
+
+    .office-content {
+        max-width: 400px;
+        padding: 35px 15px;
+    }
+
+    .office-text {
+        padding: 25px 20px;
+    }
+
+    .office-title {
+        font-size: 32px;
+    }
+
+    .office-description {
+        font-size: 14px;
+    }
+
+    .office-detail {
+        gap: 13px;
+    }
+
+    .office-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .office-detail-text h4 {
+        font-size: 15px;
+    }
+
+    .office-detail-text p {
+        font-size: 13px;
+    }
+
+    .location-btn {
+        width: 100%;
+    }
 }
