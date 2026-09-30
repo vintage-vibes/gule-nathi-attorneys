@@ -252,3 +252,18 @@ fadeElements.forEach((element) => {
 
 // observer.observe(accolades);
 
+
+const storyMore = document.querySelector('.story-more');
+const storyMoreBtn = document.querySelector('#storyMoreBtn');
+
+storyMoreBtn.addEventListener('click', () => {
+
+    storyMore.classList.toggle('show');
+
+    if (storyMore.classList.contains('show')) {
+        storyMoreBtn.textContent = 'Read Less';
+    } else {
+        storyMoreBtn.textContent = 'Read More';
+    }
+
+});

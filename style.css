@@ -568,7 +568,7 @@ header {
 
     margin-bottom: 12px;
 
-    font-size: 42px;
+    font-size: 2.2em;
     font-weight: 700;
 
     line-height: 1;
@@ -843,6 +843,17 @@ header {
 }
 
 
+.symbol:last-child {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.symbol:last-child .symbol-title {
+    width: auto;
+    flex: 1;
+}
+
 /* =========================
    BUTTON
 ========================= */
@@ -1071,6 +1082,8 @@ header {
 /* =========================================
    HEADER
 ========================================= */
+
+
 
 .service-head {
     position: relative;
@@ -1726,6 +1739,28 @@ header {
 
 }
 
+.story-more {
+    display: none;
+}
+
+.story-more.show {
+    display: block;
+}
+
+.story-more-btn {
+    margin-top: 15px;
+    padding: 12px 24px;
+    border: none;
+    background: transparent;
+    color: #b00020;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.story-more-btn:hover {
+    text-decoration: underline;
+}
 
 .story-eyebrow {
 
@@ -1933,8 +1968,9 @@ header {
 .associate-card {
 
     display: flex;
-
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 
     gap: 18px;
 
@@ -1966,6 +2002,9 @@ header {
 
 }
 
+.associate-info{
+    text-align: left;
+}
 
 .associate-info h4 {
 
@@ -1975,7 +2014,7 @@ header {
 
     font-family: var(--heading-font);
 
-    font-size: 1.2em;
+    font-size: 1.1em;
 
     font-weight: 600;
 
@@ -2116,7 +2155,7 @@ header {
 .banner-box h3 {
     margin-bottom: 25px;
 
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
 
     color: white;
@@ -3490,7 +3529,7 @@ header {
     .hero-title {
         max-width: 100%;
 
-       font-size: 2em;
+       font-size: 2.3em;
 
         line-height: 1.08;
 
@@ -3620,6 +3659,10 @@ header {
 }
 
 @media (max-width: 600px) {
+
+    .service-heading{
+    font-size: 2.2em;
+    }
 
      .office-location {
         padding: 75px 5%;
@@ -3756,7 +3799,7 @@ header {
 
 
     .story-content {
-
+        text-align: center;
         max-width: 400px;
 
     }
@@ -3942,7 +3985,7 @@ header {
         flex-wrap: wrap;
     }
 
-    .contact { padding: 70px 5%; } .contact-head { margin-bottom: 50px; } .contact-title { font-size: 40px; } .contact-subtitle {  } .contact-info { padding: 35px 25px; } .form-row { grid-template-columns: 1fr; gap: 0; } .contact-btn { width: 100%; }
+    .contact { padding: 70px 5%; } .contact-head { margin-bottom: 50px; } .contact-title { font-size: 2.2em; } .contact-subtitle {  } .contact-info { padding: 35px 25px; } .form-row { grid-template-columns: 1fr; gap: 0; } .contact-btn { width: 100%; }
 
     .why-us {
         padding: 70px 5%;
@@ -3961,7 +4004,7 @@ header {
     }
 
     .why-us-title {
-        font-size: 40px;
+        font-size:2.2em;
     }
 
 
@@ -3989,12 +4032,13 @@ header {
         width: 60px;
         height: 60px;
 
-        right: -15px;
-        bottom: -15px;
+        right: -5px;
+        bottom: -45px;
     }
 
     .aboutTextTitle {
-        font-size: 40px;
+        margin-top:40px;
+        font-size: 2.2em;
     }
 
     .aboutDescription {
@@ -4107,5 +4151,25 @@ header {
 
     .location-btn {
         width: 100%;
+    }
+}
+
+@media (max-width: 400px){
+.associate-info{
+    text-align: center;
+}
+
+.accolades-container {
+        grid-template-columns: repeat(1, 1fr);
+
+        gap: 25px 0;
+    }
+
+
+    .accolade:nth-child(4),
+    .accolade:nth-child(3) {
+        padding-bottom: 20px;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
     }
 }
