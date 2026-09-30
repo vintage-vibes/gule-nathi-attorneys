@@ -3416,6 +3416,20 @@ header {
 
 @media (max-width: 768px) {
 
+     header {
+
+        min-height: 100vh;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(6, 20, 38, 0.45) 0%,
+                rgba(11, 31, 58, 0.75) 100%
+            ),
+            url("images/banner.mr.gule.png") 75% center / cover no-repeat;
+
+    }
+
      .office-location {
         min-height: auto;
     }
@@ -3476,7 +3490,7 @@ header {
     .hero-title {
         max-width: 100%;
 
-        /* font-size: clamp(38px, 9vw, 58px); */
+       font-size: 2em;
 
         line-height: 1.08;
 
