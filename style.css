@@ -121,7 +121,7 @@ header {
         rgba(11, 31, 58, 0.78) 55%,
         rgba(11, 31, 58, 0.35) 100%
     ),
-    url("images/location-updated.png") center/cover no-repeat;
+    url("images/team.png") center/cover no-repeat;
     
 
      z-index: 10;
@@ -1979,9 +1979,9 @@ header {
 
 .associate-image {
 
-    width: 120px;
+    width: 220px;
 
-    height:120px;
+    height:220px;
 
     flex-shrink: 0;
 
@@ -3455,19 +3455,20 @@ header {
 
 @media (max-width: 768px) {
 
-     header {
-
-        min-height: 100vh;
-
+    header {
+      
+      
         background:
             linear-gradient(
                 180deg,
                 rgba(6, 20, 38, 0.45) 0%,
                 rgba(11, 31, 58, 0.75) 100%
             ),
-            url("images/location-updated.png") 75% center / cover no-repeat;
+            url("images/team.png") 45%  center  / cover  no-repeat;
 
+        
     }
+
 
      .office-location {
         min-height: auto;
@@ -3642,6 +3643,13 @@ header {
     .hero-btn-outline {
         width: 100%;
         max-width: 260px;
+    }
+
+    .hero-btn,
+    .hero-btn-outline {
+        padding: 13px 18px;
+
+    
     }
 
        .sidebar{
