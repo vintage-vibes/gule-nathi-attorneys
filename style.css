@@ -660,8 +660,24 @@ header {
 
     position: relative;
     z-index: 2;
+
+      /* filter: brightness(55%); */
 }
 
+.overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(6, 20, 38, 0.55);
+
+    z-index: 3;
+    pointer-events: none;
+}
+
+.about-image-container {
+    position: relative;
+    z-index: 2;
+}
 
 /* Decorative frame */
 
